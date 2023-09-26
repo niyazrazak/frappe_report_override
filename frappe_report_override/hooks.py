@@ -110,9 +110,9 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-#	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+    "Report": "frappe_report_override.overrides.CustomReport"
+}
 
 # Document Events
 # ---------------
@@ -155,9 +155,9 @@ app_license = "MIT"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-#	"frappe.desk.doctype.event.event.get_events": "frappe_report_override.event.get_events"
-# }
+override_whitelisted_methods = {
+    "frappe.desk.query_report.get_script": "frappe_report_override.overrides.get_script"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
@@ -215,3 +215,15 @@ app_license = "MIT"
 # auth_hooks = [
 #	"frappe_report_override.auth.validate"
 # ]
+
+report_override_js = {
+	"Job Card Summary": "reports/js/custom_job_card_summary.js",
+}
+
+# report_override = {
+# 	"Job Card Summary": "frappe_report_override.reports.custom_job_card_summary.execute"
+# }
+
+# report_override_html = {
+# 	"Job Card Summary": "reports/overrides/html/custom_job_card_summary.html"
+# }
