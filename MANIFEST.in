@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include frappe_report_override *.css
+recursive-include frappe_report_override *.csv
+recursive-include frappe_report_override *.html
+recursive-include frappe_report_override *.ico
+recursive-include frappe_report_override *.js
+recursive-include frappe_report_override *.json
+recursive-include frappe_report_override *.md
+recursive-include frappe_report_override *.png
+recursive-include frappe_report_override *.py
+recursive-include frappe_report_override *.svg
+recursive-include frappe_report_override *.txt
+recursive-exclude frappe_report_override *.pyc
